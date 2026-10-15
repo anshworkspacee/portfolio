@@ -23,6 +23,7 @@ export default function Achievements() {
     <>
       <SectionHeading kicker="Awards season" title="Top Moments" />
 
+      {achievements.length === 0 && <p className="gutter mb-6 text-sm text-mist">Verified milestones will be added here as they happen.</p>}
       <div className="gutter grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 [perspective:1400px]">
         {achievements.map((a, i) => (
           <motion.div
@@ -73,6 +74,7 @@ export default function Achievements() {
         </div>
         <div className="group/rail relative">
           <div ref={rail} className="rail gutter flex snap-x gap-3 overflow-x-auto py-5">
+            {certifications.length === 0 && <p className="py-4 text-sm text-mist">Verified certifications will appear here when available.</p>}
             {certifications.map((c, i) => (
               <motion.a
                 key={c.name}

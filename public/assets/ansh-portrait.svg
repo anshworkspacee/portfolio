@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Ansh Shrivastav — The Builder Portrait">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c070c"/>
+      <stop offset="45%" stop-color="#18070d"/>
+      <stop offset="80%" stop-color="#09050b"/>
+      <stop offset="100%" stop-color="#050307"/>
+    </linearGradient>
+    <radialGradient id="rimGlow" cx="65%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ff334b" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#e5132b" stop-opacity="0.22"/>
+      <stop offset="80%" stop-color="#e5132b" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bottomGlow" cx="50%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#46e3a8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f4f1ec"/>
+      <stop offset="75%" stop-color="#d6cfc5"/>
+      <stop offset="100%" stop-color="#9d9588"/>
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3d5a"/>
+      <stop offset="100%" stop-color="#e5132b"/>
+    </linearGradient>
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="900" height="1100" fill="url(#bgGrad)"/>
+  <rect width="900" height="1100" fill="url(#rimGlow)"/>
+  <rect width="900" height="1100" fill="url(#bottomGlow)"/>
+
+  <!-- Studio framing & fine lines -->
+  <g stroke="#f4f1ec" fill="none">
+    <circle cx="450" cy="460" r="340" stroke-opacity="0.08" stroke-width="1.5"/>
+    <circle cx="450" cy="460" r="280" stroke-opacity="0.12" stroke-width="1.2" stroke-dasharray="8 6"/>
+    <circle cx="450" cy="460" r="210" stroke-opacity="0.06" stroke-width="1"/>
+    
+    <!-- Reticle & crosshairs -->
+    <line x1="80" y1="460" x2="820" y2="460" stroke-opacity="0.06" stroke-width="1"/>
+    <line x1="450" y1="100" x2="450" y2="820" stroke-opacity="0.06" stroke-width="1"/>
+    <path d="M430 460 h40 M450 440 v40" stroke-opacity="0.25" stroke-width="1.5"/>
+    
+    <!-- Viewfinder corner brackets -->
+    <path d="M120 180 h40 M120 180 v40" stroke-opacity="0.2" stroke-width="1.5"/>
+    <path d="M780 180 h-40 M780 180 v40" stroke-opacity="0.2" stroke-width="1.5"/>
+    <path d="M120 740 h40 M120 740 v-40" stroke-opacity="0.2" stroke-width="1.5"/>
+    <path d="M780 740 h-40 M780 740 v-40" stroke-opacity="0.2" stroke-width="1.5"/>
+  </g>
+
+  <!-- Geometric Architectural Emblem / Stylized "A" -->
+  <g transform="translate(450, 470)" filter="url(#glowFilter)">
+    <!-- Shadow backdrop -->
+    <path d="M0 -220 L160 160 L100 160 L62 70 L-62 70 L-100 160 L-160 160 Z M0 -105 L-42 22 L42 22 Z" fill="#000000" opacity="0.6" transform="translate(0, 10)"/>
+    <!-- Outer faceted A shape -->
+    <path d="M0 -220 L160 160 L100 160 L62 70 L-62 70 L-100 160 L-160 160 Z M0 -105 L-42 22 L42 22 Z" fill="url(#aGrad)"/>
+    <!-- Dimensional inner facet (left half highlight) -->
+    <path d="M0 -220 L0 160 L-100 160 L-62 70 L0 70 L0 22 L-42 22 L0 -105 Z" fill="#ffffff" opacity="0.15"/>
+    <!-- Red glowing core crossbar accent -->
+    <rect x="-60" y="52" width="120" height="8" rx="4" fill="url(#redAccent)"/>
+    <!-- Dot accent -->
+    <circle cx="180" cy="148" r="14" fill="#ff3d5a"/>
+  </g>
+
+  <!-- Studio metadata typography -->
+  <g text-anchor="middle" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif">
+    <text x="450" y="725" font-family="'Bebas Neue', Impact, sans-serif" font-size="28" font-weight="700" letter-spacing="12" fill="#ff3d5a">
+      THE BUILDER
+    </text>
+    <text x="450" y="760" font-size="12" font-weight="600" letter-spacing="6" fill="#f4f1ec" opacity="0.75">
+      WEBYONEEC FOUNDER · WEB DEVELOPER
+    </text>
+  </g>
+
+  <!-- Lower signature plaque -->
+  <g text-anchor="middle">
+    <rect x="270" y="940" width="360" height="42" rx="21" fill="#000000" fill-opacity="0.45" stroke="#f4f1ec" stroke-opacity="0.12" stroke-width="1"/>
+    <text x="450" y="966" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="4" fill="#f4f1ec">
+      ANSH SHRIVASTAV
+    </text>
+  </g>
+</svg>

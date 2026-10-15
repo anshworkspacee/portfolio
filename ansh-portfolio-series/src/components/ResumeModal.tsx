@@ -45,12 +45,10 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
         {small ? (
           <div data-lenis-prevent className="h-full overflow-y-auto">
             <ResumeSheet />
-            <a href={profile.resumePdf} target="_blank" rel="noreferrer" className="glass mt-4 flex min-h-12 items-center justify-center rounded-md text-sm font-semibold text-bone">
-              Open original PDF ↗
-            </a>
+            {profile.resumePdf && <a href={profile.resumePdf} target="_blank" rel="noreferrer" className="glass mt-4 flex min-h-12 items-center justify-center rounded-md text-sm font-semibold text-bone">Open original PDF ↗</a>}
           </div>
         ) : (
-          {profile.resumePdf ? <iframe title="Ansh Shrivastav resume (PDF)" src={`${profile.resumePdf}#view=FitH`} className="h-full w-full rounded-xl bg-white" /> : <div className="h-full overflow-y-auto"><ResumeSheet /></div>}
+          profile.resumePdf ? <iframe title="Ansh Shrivastav resume (PDF)" src={`${profile.resumePdf}#view=FitH`} className="h-full w-full rounded-xl bg-white" /> : <div className="h-full overflow-y-auto"><ResumeSheet /></div>
         )}
       </motion.div>
     </motion.div>

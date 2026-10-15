@@ -82,30 +82,6 @@ export const skillEvidence: Record<string,string[]> = {
  * Factual cross-references shown when a skill card is hovered/tapped:
  * where the skill appears in the projects, certifications or achievements on the resume.
  */
-export const skillEvidence: Record<string, string[]> = {
-  Java: ['Oracle Java Certified Foundations Associate', 'HackerRank 5-star'],
-  Python: ['PolicyGuard AI', 'Cisco Python Essentials 1', 'HackerRank 5-star'],
-  C: ['HackerRank 5-star'],
-  React: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  HTML: ['Pearson IT Specialist – HTML and CSS', 'Cisco HTML Essentials'],
-  CSS: ['Pearson IT Specialist – HTML and CSS', 'Cisco CSS Essentials'],
-  JavaScript: ['Cisco JavaScript Essentials 1 & 2'],
-  'Node.js': ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  'Express.js': ['Payment Gateway System'],
-  Docker: ['Payment Gateway System'],
-  'Docker Compose': ['Multi-Tenant SaaS Platform'],
-  'REST APIs': ['PolicyGuard AI'],
-  Microservices: ['Payment Gateway System'],
-  'JWT Auth': ['Multi-Tenant SaaS Platform'],
-  'Git / GitHub': ['GitHub Foundations'],
-  PostgreSQL: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  MongoDB: ['MongoDB Certified Associate Developer'],
-  DBMS: ['NPTEL Database Management System', 'Oracle Database Foundations'],
-  DSA: ['AlgoUniversity Tech Fellow', '850+ problems solved'],
-  'Cloud Computing (AWS)': ['AWS Certified AI Practitioner', 'AWS Academy Cloud Foundations'],
-  'Machine Learning': ['B.Tech AI & ML', 'NPTEL Deep Learning'],
-};
-
 export type Episode = {
   code: string;
   title: string;
@@ -129,11 +105,6 @@ const ocean: Palette = { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent:
 const violet: Palette = { from: '#120822', via: '#3d1a6e', to: '#07060c', accent: '#b98bff' };
 const jade: Palette = { from: '#03150f', via: '#0d5a40', to: '#050a08', accent: '#46e3a8' };
 
-const crimson: Palette = { from:'#24060b',via:'#6e0d1d',to:'#09070a',accent:'#ff3d5a' };
-const amber: Palette = { from:'#1c1003',via:'#6b3c06',to:'#0a0806',accent:'#ffb547' };
-const ocean: Palette = { from:'#04121f',via:'#0f4c6e',to:'#05080d',accent:'#4cc9ff' };
-const violet: Palette = { from:'#120822',via:'#3d1a6e',to:'#07060c',accent:'#b98bff' };
-const jade: Palette = { from:'#03150f',via:'#0d5a40',to:'#050a08',accent:'#46e3a8' };
 export const seasons: Season[] = [
  {number:1,title:'The Learning Curve',period:'Ongoing',synopsis:'Learning web development by building projects, shipping them, and improving what comes next.',episodes:[
  {code:'S01 E01',title:'Learning the Basics',description:'Building confidence with HTML, CSS, JavaScript, and responsive layouts.',tags:['HTML','CSS','JavaScript'],runtime:'Ongoing',palette:amber},
